@@ -25,7 +25,6 @@ public class MetroLine4 extends MetroLine {
         else return instance;
     }
 
-
     @Override
     public List<Station> getStationList() {
         return stationList;
@@ -56,7 +55,6 @@ public class MetroLine4 extends MetroLine {
         MetroBuilder.buildLine(StationEnum.values(), getInstance());
     }
 
-
     private enum StationEnum {
         安河桥北(Station.Type.ENDPOINT, "北宫门", 1363),
         北宫门(Station.Type.NORMAL, "西苑", 1251),
@@ -81,7 +79,18 @@ public class MetroLine4 extends MetroLine {
         北京南站(Station.Type.TRANSFER, "马家堡", 1480),
         马家堡(Station.Type.NORMAL, "角门西", 827),
         角门西(Station.Type.TRANSFER, "公益西桥", 989),
-        公益西桥(Station.Type.ENDPOINT, "", 0);
+        公益西桥(Station.Type.ENDPOINT, "新宫", 0),
+        新宫(Station.Type.NORMAL, "西红门	", 1000),
+        西红门(Station.Type.NORMAL, "高米店北	", 1000),
+        高米店北(Station.Type.NORMAL, "高米店南	", 1000),
+        高米店南(Station.Type.NORMAL, "枣园	", 1000),
+        枣园(Station.Type.NORMAL, "清源路	", 1000),
+        清源路(Station.Type.NORMAL, "黄村西大街	", 1000),
+        黄村西大街(Station.Type.NORMAL, "黄村火车站	", 1000),
+        黄村火车站(Station.Type.NORMAL, "义和庄	", 1000),
+        义和庄(Station.Type.NORMAL, "生物医药基地	", 1000),
+        生物医药基地(Station.Type.NORMAL, "天宫院	", 1000),
+        天宫院(Station.Type.NORMAL, "", 1000);
 
         private Station.Type type;
         private String nameOfNextSta;//name of next station

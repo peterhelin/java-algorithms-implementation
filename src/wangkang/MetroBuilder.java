@@ -7,6 +7,7 @@ import java.util.*;
  * Date: 14/11/2016 17:42
  */
 public class MetroBuilder {
+
     static Integer n = 0;
     static Map<String, Station> mapOfStaNameAndSta = new HashMap<>();
 
@@ -73,19 +74,9 @@ public class MetroBuilder {
         MetroLineDx.getInstance().build();
         MetroLineJc.getInstance().build();
         MetroLineYz.getInstance().build();
-
     }
 
     public static void main(String... args) {
         MetroBuilder.bulid();
-//        BjSubway.metroLines.forEach(
-//                line -> {
-//
-//                });
-//        BjSubway.stations.forEach(
-//                station -> {
-//                    System.out.print(station.getName() + station.getStaNumInAll() + "     ");
-//                    System.out.println();
-//                });
     }
 }

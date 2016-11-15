@@ -1,10 +1,5 @@
 package wangkang;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 /**
  * Author: helin <1006604973@qq.com>.
  * Date: 14/11/2016 12:06
@@ -15,14 +10,12 @@ public class Station {
     private Integer staNumInAll;//station number in all stations
     private Type type;
 
-
     enum Type {
         NORMAL,
         TRANSFER,
         ENDPOINT,
         ENDPOINTANDTRANSFER
     }
-
 
     Station(String name) {
         this(Type.NORMAL, name, 0);

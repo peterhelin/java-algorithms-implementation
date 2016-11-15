@@ -2,38 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecfcbf13-87f5-48be-a6dd-f28e0b75f91e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wangkang/MetroLine1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wangkang/MetroLine13.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wangkang/MetroLine14.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wangkang/MetroLine15.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wangkang/MetroLine2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wangkang/MetroLine5.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wangkang/MetroLine6.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wangkang/MetroLine7.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wangkang/MetroLine8.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wangkang/MetroLine9.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wangkang/MetroLineBt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wangkang/MetroLineCp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wangkang/MetroLineDx.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wangkang/MetroLineFs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wangkang/MetroLineJc.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wangkang/MetroLineYz.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/wangkang/Line4.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/wangkang/Line7.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/wangkang/Lines.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/java-algorithms-implementation/wangkang/BjSubway.class" afterPath="$PROJECT_DIR$/out/production/java-algorithms-implementation/wangkang/BjSubway.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/java-algorithms-implementation/wangkang/MetroBuilder.class" afterPath="$PROJECT_DIR$/out/production/java-algorithms-implementation/wangkang/MetroBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/java-algorithms-implementation/wangkang/MetroLine.class" afterPath="$PROJECT_DIR$/out/production/java-algorithms-implementation/wangkang/MetroLine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/java-algorithms-implementation/wangkang/Station.class" afterPath="$PROJECT_DIR$/out/production/java-algorithms-implementation/wangkang/Station.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/java-algorithms-implementation/wangkang/tmp" afterPath="$PROJECT_DIR$/out/production/java-algorithms-implementation/wangkang/tmp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wangkang/BjSubway.java" afterPath="$PROJECT_DIR$/src/wangkang/BjSubway.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wangkang/MetroBuilder.java" afterPath="$PROJECT_DIR$/src/wangkang/MetroBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wangkang/MetroLine.java" afterPath="$PROJECT_DIR$/src/wangkang/MetroLine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wangkang/MetroLine10.java" afterPath="$PROJECT_DIR$/src/wangkang/MetroLine10.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wangkang/MetroLine4.java" afterPath="$PROJECT_DIR$/src/wangkang/MetroLine4.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wangkang/Station.java" afterPath="$PROJECT_DIR$/src/wangkang/Station.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wangkang/tmp" afterPath="$PROJECT_DIR$/src/wangkang/tmp" />
     </list>
     <ignored path="java-algorithms-implementation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,11 +30,11 @@
       <file leaf-file-name="BjSubway.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wangkang/BjSubway.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="91" column="40" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
+            <state relative-caret-position="464">
+              <caret line="89" column="43" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1479207991000" expanded="true" signature="0:3519" ph="..." />
+                <marker date="1479209026000" expanded="true" signature="0:3515" ph="..." />
               </folding>
             </state>
           </provider>
@@ -71,8 +43,8 @@
       <file leaf-file-name="MetroBuilder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wangkang/MetroBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+            <state relative-caret-position="374">
+              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="87" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -104,11 +76,35 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MetroLine4.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/wangkang/MetroLine4.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="94" column="11" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#814#815#0" expanded="true" />
+                <element signature="e#879#880#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Dijkstra.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jwetherell/algorithms/graph/Dijkstra.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1105">
               <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Station.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/wangkang/Station.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-210">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -147,11 +143,9 @@
         <option value="$PROJECT_DIR$/src/com/jwetherell/algorithms/graph/Dijkstra.java" />
         <option value="$PROJECT_DIR$/src/wangkang/Line10.java" />
         <option value="$PROJECT_DIR$/src/wangkang/absCla.java" />
-        <option value="$PROJECT_DIR$/src/wangkang/Station.java" />
         <option value="$PROJECT_DIR$/src/wangkang/Line4.java" />
         <option value="$PROJECT_DIR$/src/wangkang/MetroLine.java" />
         <option value="$PROJECT_DIR$/src/wangkang/MetroLine10.java" />
-        <option value="$PROJECT_DIR$/src/wangkang/MetroLine4.java" />
         <option value="$PROJECT_DIR$/src/wangkang/MetroLine9.java" />
         <option value="$PROJECT_DIR$/src/wangkang/MetroLine7.java" />
         <option value="$PROJECT_DIR$/src/wangkang/MetroLine1.java" />
@@ -169,7 +163,9 @@
         <option value="$PROJECT_DIR$/src/wangkang/MetroLineYz.java" />
         <option value="$PROJECT_DIR$/src/wangkang/MetroLineDx.java" />
         <option value="$PROJECT_DIR$/src/wangkang/MetroLineJc.java" />
+        <option value="$PROJECT_DIR$/src/wangkang/Station.java" />
         <option value="$PROJECT_DIR$/src/wangkang/MetroBuilder.java" />
+        <option value="$PROJECT_DIR$/src/wangkang/MetroLine4.java" />
         <option value="$PROJECT_DIR$/src/wangkang/BjSubway.java" />
       </list>
     </option>
@@ -921,7 +917,7 @@
       <option name="presentableId" value="Default" />
       <updated>1479002559555</updated>
       <workItem from="1479002563137" duration="59012000" />
-      <workItem from="1479135144388" duration="28227000" />
+      <workItem from="1479135144388" duration="29121000" />
     </task>
     <servers />
   </component>
@@ -934,11 +930,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87239000" />
+    <option name="totallyTimeSpent" value="88133000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -948,7 +944,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4082232" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4082232" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1138,38 +1134,6 @@
         <state relative-caret-position="74">
           <caret line="12" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/wangkang/Station.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/wangkang/MetroLine4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#1186#1187#0" expanded="true" />
-            <element signature="e#1261#1262#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1375,21 +1339,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/wangkang/Station.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wangkang/MetroLine4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="94" column="11" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/wangkang/MetroBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+        <state relative-caret-position="374">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="87" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wangkang/BjSubway.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="91" column="40" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
+        <state relative-caret-position="464">
+          <caret line="89" column="43" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1479207991000" expanded="true" signature="0:3519" ph="..." />
+            <marker date="1479209026000" expanded="true" signature="0:3515" ph="..." />
           </folding>
         </state>
       </provider>

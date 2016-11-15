@@ -16,7 +16,6 @@ public class BjSubway<T> {
     static Map<Integer, String> staNumInAllMapToStaName = new HashMap<>();
     static Map<Integer, Graph.Vertex> staNumInAllMapToVertex = new HashMap<>();
 
-
     final List<Graph.Vertex<Integer>> verticies = new ArrayList<Graph.Vertex<Integer>>();
     final List<Graph.Edge<Integer>> edges = new ArrayList<>();
     Graph graph;
@@ -89,6 +88,6 @@ public class BjSubway<T> {
     public static void main(String... args) {
         BjSubway bjSubway = new BjSubway();
         bjSubway.graphInit();
-        bjSubway.path("T3航站楼", "昌平西山口");
+        bjSubway.path("魏公村", "天宫院");
     }
 }
