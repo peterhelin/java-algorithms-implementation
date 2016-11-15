@@ -10,9 +10,9 @@ import java.util.List;
  * Graph. Could be directed or undirected depending on the TYPE enum. A graph is
  * an abstract representation of a set of objects where some pairs of the
  * objects are connected by links.
- * 
+ * <p>
  * http://en.wikipedia.org/wiki/Graph_(mathematics)
- * 
+ *
  * @author Justin Wetherell <phishman3579@gmail.com>
  */
 @SuppressWarnings("unchecked")
@@ -25,16 +25,21 @@ public class Graph<T extends Comparable<T>> {
         DIRECTED, UNDIRECTED
     }
 
-    /** Defaulted to undirected */
+    /**
+     * Defaulted to undirected
+     */
     private TYPE type = TYPE.UNDIRECTED;
 
-    public Graph() { }
+    public Graph() {
+    }
 
     public Graph(TYPE type) {
         this.type = type;
     }
 
-    /** Deep copies **/
+    /**
+     * Deep copies
+     **/
     public Graph(Graph<T> g) {
         type = g.getType();
 
@@ -51,12 +56,12 @@ public class Graph<T extends Comparable<T>> {
 
     /**
      * Creates a Graph from the vertices and edges. This defaults to an undirected Graph
-     * 
+     * <p>
      * NOTE: Duplicate vertices and edges ARE allowed.
      * NOTE: Copies the vertex and edge objects but does NOT store the Collection parameters itself.
-     * 
+     *
      * @param vertices Collection of vertices
-     * @param edges Collection of edges
+     * @param edges    Collection of edges
      */
     public Graph(Collection<Vertex<T>> vertices, Collection<Edge<T>> edges) {
         this(TYPE.UNDIRECTED, vertices, edges);
@@ -64,12 +69,12 @@ public class Graph<T extends Comparable<T>> {
 
     /**
      * Creates a Graph from the vertices and edges.
-     * 
+     * <p>
      * NOTE: Duplicate vertices and edges ARE allowed.
      * NOTE: Copies the vertex and edge objects but does NOT store the Collection parameters itself.
-     * 
+     *
      * @param vertices Collection of vertices
-     * @param edges Collection of edges
+     * @param edges    Collection of edges
      */
     public Graph(TYPE type, Collection<Vertex<T>> vertices, Collection<Edge<T>> edges) {
         this(type);
@@ -145,7 +150,7 @@ public class Graph<T extends Comparable<T>> {
         Arrays.sort(ov1);
         final Object[] ov2 = g.allVertices.toArray();
         Arrays.sort(ov2);
-        for (int i=0; i<ov1.length; i++) {
+        for (int i = 0; i < ov1.length; i++) {
             final Vertex<T> v1 = (Vertex<T>) ov1[i];
             final Vertex<T> v2 = (Vertex<T>) ov2[i];
             if (!v1.equals(v2))
@@ -157,7 +162,7 @@ public class Graph<T extends Comparable<T>> {
         Arrays.sort(oe1);
         final Object[] oe2 = g.allEdges.toArray();
         Arrays.sort(oe2);
-        for (int i=0; i<oe1.length; i++) {
+        for (int i = 0; i < oe1.length; i++) {
             final Edge<T> e1 = (Edge<T>) oe1[i];
             final Edge<T> e2 = (Edge<T>) oe2[i];
             if (!e1.equals(e2))
@@ -193,7 +198,9 @@ public class Graph<T extends Comparable<T>> {
             this.weight = weight;
         }
 
-        /** Deep copies the edges along with the value and weight **/
+        /**
+         * Deep copies the edges along with the value and weight
+         **/
         public Vertex(Vertex<T> vertex) {
             this(vertex.value, vertex.weight);
 
@@ -367,7 +374,7 @@ public class Graph<T extends Comparable<T>> {
          */
         @Override
         public int hashCode() {
-            final int cost = (this.cost * (this.getFromVertex().hashCode() * this.getToVertex().hashCode())); 
+            final int cost = (this.cost * (this.getFromVertex().hashCode() * this.getToVertex().hashCode()));
             return 31 * cost;
         }
 
@@ -424,7 +431,7 @@ public class Graph<T extends Comparable<T>> {
         public String toString() {
             StringBuilder builder = new StringBuilder();
             builder.append("[ ").append(from.value).append("(").append(from.weight).append(") ").append("]").append(" -> ")
-                   .append("[ ").append(to.value).append("(").append(to.weight).append(") ").append("]").append(" = ").append(cost).append("\n");
+                    .append("[ ").append(to.value).append("(").append(to.weight).append(") ").append("]").append(" = ").append(cost).append("\n");
             return builder.toString();
         }
     }
@@ -459,7 +466,7 @@ public class Graph<T extends Comparable<T>> {
          */
         @Override
         public int hashCode() {
-            return 31 * (this.cost * ((this.vertex!=null)?this.vertex.hashCode():1));
+            return 31 * (this.cost * ((this.vertex != null) ? this.vertex.hashCode() : 1));
         }
 
         /**
@@ -470,7 +477,7 @@ public class Graph<T extends Comparable<T>> {
             if (!(e1 instanceof CostVertexPair))
                 return false;
 
-            final CostVertexPair<?> pair = (CostVertexPair<?>)e1;
+            final CostVertexPair<?> pair = (CostVertexPair<?>) e1;
             if (this.cost != pair.cost)
                 return false;
 
