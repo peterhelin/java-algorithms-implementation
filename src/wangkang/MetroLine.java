@@ -7,32 +7,17 @@ import java.util.List;
  * Author: helin <1006604973@qq.com>.
  * Date: 14/11/2016 12:19
  */
-public class MetroLine {
-    private Integer lineNum;
-    List<Station> stationList = new ArrayList<>();
-    List<Integer> distanceList = new ArrayList<>();
+public abstract class MetroLine {
 
-    public MetroLine(int lineNum) {
-        this.lineNum = lineNum;
-    }
+    public abstract Station.Type getStaType(String staName);
 
-    public Integer getLineNum() {
-        return lineNum;
-    }
+    public abstract Integer getDisToNextStaInDO(String staName);
 
-    public void setLineNum(Integer lineNum) {
-        this.lineNum = lineNum;
-    }
+    public abstract void build();
 
-    public List<Station> getStationList() {
-        return stationList;
-    }
+    public abstract List<Station> getStationList();
 
-    public void setStationList(List<Station> stationList) {
-        this.stationList = stationList;
-    }
+    public abstract List<Integer> getDistanceList();
 
-    public void addStation(Station station) {
-        stationList.add(station);
-    }
+    public abstract String getNextStaName(String name);
 }

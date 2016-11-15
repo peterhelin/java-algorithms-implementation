@@ -14,7 +14,7 @@ public class Station {
     private String name;
     private Integer staNumInAll;//station number in all stations
     private Type type;
-    private Map<Station, Integer> next = new HashMap<>();
+
 
     enum Type {
         NORMAL,
@@ -23,13 +23,6 @@ public class Station {
         ENDPOINTANDTRANSFER
     }
 
-    public void addNext(Station station, Integer distance) {
-        next.put(station, distance);
-    }
-
-    public Map<Station, Integer> getNext() {
-        return next;
-    }
 
     Station(String name) {
         this(Type.NORMAL, name, 0);
@@ -63,9 +56,5 @@ public class Station {
 
     public Integer getStaNumInAll() {
         return staNumInAll;
-    }
-
-    public void setStaNumInAll(Integer staNum) {
-        this.staNumInAll = staNumInAll;
     }
 }

@@ -32,63 +32,46 @@ public class BjSubway<T> {
         }
     }
 
-    public void graphInit() {
-        MetroBuilder.bulid();
-        metroLines.stream().forEach(
-                line -> {
-                    for (int i = 0; i < line.stationList.size() - 1; i++) {
-                        Integer staNumInAllOfFrom = line.stationList.get(i).getStaNumInAll();
-                        Graph.Vertex from = getVertex(staNumInAllOfFrom);
+    private void graphInitByLine(MetroLine line) {
+        for (int i = 0; i < line.getStationList().size() - 1; i++) {
+            Integer staNumInAllOfFrom = line.getStationList().get(i).getStaNumInAll();
+            Graph.Vertex from = getVertex(staNumInAllOfFrom);
 
-                        Integer staNumInAllOfTo = line.stationList.get(i + 1).getStaNumInAll();
-                        Graph.Vertex to = getVertex(staNumInAllOfTo);
+            Integer staNumInAllOfTo = line.getStationList().get(i + 1).getStaNumInAll();
+            Graph.Vertex to = getVertex(staNumInAllOfTo);
 
-                        Graph.Edge<Integer> edge = new Graph.Edge<>(
-                                line.distanceList.get(i),
-                                from,
-                                to);
-                        edges.add(edge);
-                    }
-                });
-
-//        verticies.stream().forEach(
-//                o1 -> {
-//                    System.out.println(((Graph.Vertex) o1).getValue());
-//                });
-        graph = new Graph(verticies, edges);
-
-//        graph.getVertices().stream().forEach(
-//                o1 -> {
-//                    System.out.println(((Graph.Vertex) o1).getValue());
-//                });
-
-
-//        graph.getEdges().stream().forEach(
-//                o -> {
-//                    System.out.println(
-//                            stations.get((Integer) ((Graph.Edge) o).getFromVertex().getValue()).getName() + " " +
-//                                    stations.get((Integer) ((Graph.Edge) o).getToVertex().getValue()).getName() + " " +
-//                                    ((Graph.Edge) o).getCost());
-//                });
+            Graph.Edge<Integer> edge = new Graph.Edge<>(
+                    line.getDistanceList().get(i),
+                    from,
+                    to);
+            edges.add(edge);
+        }
     }
 
+    public void graphInit() {
+        MetroBuilder.bulid();
+        metroLines.stream().forEach(line -> graphInitByLine(line));
+        graph = new Graph(verticies, edges);
+    }
 
-    public void bjSubway(String from, String to) {
-//        verticies.get(0).getEdges().forEach(
-//                o -> {
-//                    System.out.println(
-//                            (stations.get((Integer) ((Graph.Edge) o).getFromVertex().getValue())).getName() + " " +
-//                                    (stations.get((Integer) ((Graph.Edge) o).getToVertex().getValue())).getName() + " " +
-//                                    ((Graph.Edge) o).getCost());
-//                });
-//
-//        verticies.get(5).getEdges().forEach(
-//                o -> {
-//                    System.out.println(
-//                            (stations.get((Integer) ((Graph.Edge) o).getFromVertex().getValue())).getName() + " " +
-//                                    (stations.get((Integer) ((Graph.Edge) o).getToVertex().getValue())).getName() + " " +
-//                                    ((Graph.Edge) o).getCost());
-//                });
+    //        graph.getVertices().stream().forEach(
+    //                o1 -> {
+    //                    System.out.println(((Graph.Vertex) o1).getValue());
+    //                });
+    //        graph.getEdges().stream().forEach(
+    //                o -> {
+    //                    System.out.println(
+    //                            stations.get((Integer) ((Graph.Edge) o).getFromVertex().getValue()).getName() + " " +
+    //                                    stations.get((Integer) ((Graph.Edge) o).getToVertex().getValue()).getName() + " " +
+    //                                    ((Graph.Edge) o).getCost());
+    //                });
+
+    public void path(String from, String to) {
+
+        if (from.equals("T3航站楼")) {
+            System.out.print("T3航站楼-->");
+            from = "T2航站楼";
+        }
 
         Graph.Vertex vf = staNumInAllMapToVertex.get(staNameMapToStaNumInAll.get(from));
         Graph.Vertex ve = staNumInAllMapToVertex.get(staNameMapToStaNumInAll.get(to));
@@ -96,18 +79,16 @@ public class BjSubway<T> {
                 getPath().
                 forEach(
                         o -> {
-//                            System.out.println(o);
-                            System.out.println(
-                                    staNumInAllMapToStaName.get(((Graph.Edge) o).getFromVertex().getValue()) + " " +
-                                            staNumInAllMapToStaName.get(((Graph.Edge) o).getToVertex().getValue()) + " " +
-                                            ((Graph.Edge) o).getCost());
+                            System.out.print(
+                                    staNumInAllMapToStaName.get(((Graph.Edge) o).getFromVertex().getValue()) + "-->"
+                            );
                         });
+        System.out.println(to);
     }
-
 
     public static void main(String... args) {
         BjSubway bjSubway = new BjSubway();
         bjSubway.graphInit();
-        bjSubway.bjSubway("安河桥北", "火器营");
+        bjSubway.path("T3航站楼", "昌平西山口");
     }
 }

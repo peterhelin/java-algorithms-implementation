@@ -13,64 +13,79 @@ public class MetroBuilder {
     private MetroBuilder() {
     }
 
-    private static void buildLine(MetroLine4.Line4[] line4) {
-        MetroLine line = new MetroLine(4);
+    public static void buildLine(Enum[] ena, MetroLine line) {
         BjSubway.metroLines.add(line);
-
-        for (int i = 0; i < line4.length; i++) {
-            Station station = (buildStation(line4[i].getType(), line4[i].name(), line4[i].getDisToNextStaInDown(), line));
-//            if (i > 0) {
-//                line.stationList.get(i - 1).addNext(station, line4[i - 1].getDisToNextStaInDown());
-//            }
+        int i;
+        for (i = 0; i < ena.length; i++) {
+            String name = ena[i].name();
+            buildStation(line.getStaType(name), name, line.getDisToNextStaInDO(name), line);
         }
+        System.out.println(i);
+
+        if (i == ena.length) {
+
+            String name = ena[i - 1].name();
+            String nextStaName = line.getNextStaName(name);
+            if (nextStaName != "") {//终点换乘站
+                Station station = mapOfStaNameAndSta.get(nextStaName);
+                line.getStationList().add(station);
+                line.getDistanceList().add(line.getDisToNextStaInDO(name));
+            }
+        }
+
     }
 
-    private static void buildLine(MetroLine4.Line10[] line10) {
-        MetroLine line = new MetroLine(10);
-        BjSubway.metroLines.add(line);
-
-        for (int i = 0; i < line10.length; i++) {
-            Station station = (buildStation(line10[i].getType(), line10[i].name(), line10[i].getDisToNextStaInDown(), line));
-        }
-    }
-
-
-    private static Station buildStation(Station.Type type, String staName, Integer disToDownSta, MetroLine line) {
+    public static Station buildStation(Station.Type type, String staName, Integer disToDownSta, MetroLine line) {
         if (!mapOfStaNameAndSta.containsKey(staName)) {
             BjSubway.staNameMapToStaNumInAll.put(staName, n);
             BjSubway.staNumInAllMapToStaName.put(n, staName);
             Station station = new Station(type, staName, n++);
             mapOfStaNameAndSta.put(staName, station);
 
-
-            line.stationList.add(station);
-            line.distanceList.add(disToDownSta);
+            line.getStationList().add(station);
+            line.getDistanceList().add(disToDownSta);
             BjSubway.stations.add(station);
             return station;
         } else {
             Station station = mapOfStaNameAndSta.get(staName);
-            line.stationList.add(station);
-            line.distanceList.add(disToDownSta);
+            line.getStationList().add(station);
+            line.getDistanceList().add(disToDownSta);
             return station;
         }
     }
 
     public static void bulid() {
-        MetroBuilder.buildLine(MetroLine4.Line4.values());
-        MetroBuilder.buildLine(MetroLine4.Line10.values());
+        MetroLine1.getInstance().build();
+        MetroLine2.getInstance().build();
+        MetroLine4.getInstance().build();
+        MetroLine5.getInstance().build();
+        MetroLine6.getInstance().build();
+        MetroLine7.getInstance().build();
+        MetroLine8.getInstance().build();
+        MetroLine9.getInstance().build();
+        MetroLine10.getInstance().build();
+        MetroLine13.getInstance().build();
+        MetroLine14.getInstance().build();
+        MetroLine15.getInstance().build();
+        MetroLineFs.getInstance().build();
+        MetroLineBt.getInstance().build();
+        MetroLineCp.getInstance().build();
+        MetroLineDx.getInstance().build();
+        MetroLineJc.getInstance().build();
+        MetroLineYz.getInstance().build();
+
     }
 
     public static void main(String... args) {
         MetroBuilder.bulid();
-        BjSubway.metroLines.forEach(
-                line -> {
-
-                });
-        BjSubway.stations.forEach(
-                station -> {
-                    System.out.print(station.getName() + station.getStaNumInAll() + "     ");
-                    station.getNext().entrySet().forEach(entry -> System.out.print(entry.getKey().getName() + " " + entry.getValue() + "   "));
-                    System.out.println();
-                });
+//        BjSubway.metroLines.forEach(
+//                line -> {
+//
+//                });
+//        BjSubway.stations.forEach(
+//                station -> {
+//                    System.out.print(station.getName() + station.getStaNumInAll() + "     ");
+//                    System.out.println();
+//                });
     }
 }
