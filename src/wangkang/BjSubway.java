@@ -90,4 +90,6 @@ public class BjSubway<T> {
         bjSubway.graphInit();
         bjSubway.path("魏公村", "天宫院");
     }
+
+
 }
